@@ -7,30 +7,74 @@ body {
     font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
 }
 
-:root {
-  --white: #ffffff;
-  --lightBlue: #008fb3;
-  --shadow: #00000030;
-  --grey: #4d4d4d;
-}
-
 header {
   background-image: linear-gradient(
-    166deg,
-    var(--lightBlue) 60%,
-    var(--shadow) 60.4%,
-    var(--white) 60%
+    170deg,
+    lightgreen 60%,
+    lightgrey 60.4%,
+    white 60%
   );
 }
 
 #header-container {
-  margin: 0 auto 5rem auto;
-  width: 85%;
+  margin: auto;
+  width: 950px;
   display: flex;
   align-items: center;
-  padding: 5.4rem 0;
+  padding: 3rem 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.header-img-content {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.user-name {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display';
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.about-me-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+font-family: 'Playfair Display';
+font-size: 2rem;
+color: darkgrey;
+}
+
+.about {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#icons {
+  display: flex;
+  justify-content:end;
+  gap: 20px;
 }
 
 .icons {
-  width: 25px;
+  width: 35px;
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    color: green;
+  }
 }
