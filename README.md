@@ -1,2 +1,2 @@
-# basic-web-template
-basic web template for all of my websites
+# homepage-project
+Simple personal homepage project
