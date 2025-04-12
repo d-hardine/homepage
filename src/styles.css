@@ -18,7 +18,8 @@ header {
 
 #header-container {
   margin: auto;
-  width: 950px;
+  max-width: 70%;
+  min-width: 900px;
   display: flex;
   align-items: center;
   padding: 3rem 0;
@@ -45,11 +46,10 @@ header {
 
 .about-me-container {
   background-color: white;
-  padding: 30px;
+  padding: 40px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 h2 {
@@ -74,7 +74,42 @@ color: darkgrey;
 }
 
 @media (max-width: 1000px) {
-  h2 {
-    color: green;
+  .image-container {
+    z-index: 1;
+    /*transform: scale(0.7);*/
+    width: calc(0.7 * 480px);
   }
+
+  img {
+    width: calc(0.7 * 480px);
+  }
+
+  #header-container {
+    min-width: 100%;
+    background-color: red;
+  }
+
+  .about-me-container {
+    position: relative;
+    top: 100px;
+    left: -250px;
+    display: block;
+  }
+
+  .transparent {
+    width: 220px;
+    height: 210px;
+    position: relative;
+    float: left;
+  }
+
+  #icons {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-name {
+    color: red;
+  } 
 }
