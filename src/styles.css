@@ -82,16 +82,18 @@ color: darkgrey;
 
   .image-container {
     z-index: 1;
-    transform: translateX(5rem) translateY(2rem);
+    transform: translateX(80px) translateY(40px);
   }
 
   .image-container img {
-    width: calc(0.7 * 480px);
+    width: calc(0.6 * 480px);
+    height: calc(0.7 * 480px);
+    object-fit: cover;
   }
 
   .user-name {
-    top: 15px;
-    left: 300px;
+    top: 20px;
+    left: 250px;
     text-wrap: nowrap;
   }
 
@@ -115,8 +117,58 @@ color: darkgrey;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
+  header {
+    background-image: linear-gradient(
+      160deg,
+      lightgreen 60%,
+      lightgrey 60.4%,
+      white 60%
+    );
+  }
+
+  #header-container {
+    flex-direction: column;
+    min-width: unset;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+  }
+
+  .image-container {
+    transform: none;
+    height: calc(1 * 480px);
+  }
+
+  .image-container img{
+    height: 100%;
+  }
+
   .user-name {
-    color: red;
-  } 
+    text-wrap: wrap;
+    top: 360px;
+    left: 20px;
+  }
+
+  h2 {
+    color: rgb(78, 78, 78);
+  }
+
+  .about-me-container {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .transparent {
+    display: none;
+  }
+
+  #icons {
+    display: flex;
+  }
 }
