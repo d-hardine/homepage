@@ -19,7 +19,7 @@ header {
 #header-container {
   margin: auto;
   max-width: 70%;
-  min-width: 900px;
+  min-width: 950px;
   display: flex;
   align-items: center;
   padding: 3rem 0;
@@ -75,14 +75,14 @@ color: darkgrey;
 
 @media (max-width: 1024px) {
   #header-container {
-    border: 1px solid black;
-    width: 1600px;
+    min-width: unset;
+    max-width: 1000px;
+    min-width: 828px;
   }
 
   .image-container {
     z-index: 1;
-    /*transform: scale(0.7);*/
-    transform: translateX(5rem) translateY(1rem);
+    transform: translateX(5rem) translateY(2rem);
   }
 
   .image-container img {
@@ -97,11 +97,10 @@ color: darkgrey;
 
   .about-me-container {
     position: relative;
-    /*top: 7.5em;
-    left: -13rem;*/
+    top: 7.5em;
+    left: -13rem;
     display: block;
     padding: 15px;
-    height: 370px;
   }
 
   .transparent {
