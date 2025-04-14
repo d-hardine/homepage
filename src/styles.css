@@ -73,32 +73,40 @@ color: darkgrey;
   width: 35px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  #header-container {
+    border: 1px solid black;
+    width: 1600px;
+  }
+
   .image-container {
     z-index: 1;
     /*transform: scale(0.7);*/
+    transform: translateX(5rem) translateY(1rem);
+  }
+
+  .image-container img {
     width: calc(0.7 * 480px);
   }
 
-  img {
-    width: calc(0.7 * 480px);
-  }
-
-  #header-container {
-    min-width: 100%;
-    background-color: red;
+  .user-name {
+    top: 15px;
+    left: 300px;
+    text-wrap: nowrap;
   }
 
   .about-me-container {
     position: relative;
-    top: 100px;
-    left: -250px;
+    /*top: 7.5em;
+    left: -13rem;*/
     display: block;
+    padding: 15px;
+    height: 370px;
   }
 
   .transparent {
-    width: 220px;
-    height: 210px;
+    width: 290px;
+    height: 275px;
     position: relative;
     float: left;
   }
@@ -108,7 +116,7 @@ color: darkgrey;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .user-name {
     color: red;
   } 
