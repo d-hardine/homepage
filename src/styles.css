@@ -94,7 +94,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   gap: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .works {
@@ -180,11 +180,12 @@ footer {
   .main-container {
     min-width: unset;
     max-width: unset;
-    margin: 30px;
+    margin: 60px;
   }
 
   .works-container {
     grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px 15px;
   }
 
   .work-image {
