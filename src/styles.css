@@ -133,17 +133,15 @@ footer {
   background-color: lightgreen;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
   /*header stuff*/
   #header-container {
     min-width: unset;
-    max-width: 1000px;
-    min-width: 828px;
   }
 
   .image-container {
     z-index: 1;
-    transform: translateX(80px) translateY(40px);
+    transform: translateX(80px);
   }
 
   .image-container img {
@@ -153,7 +151,7 @@ footer {
   }
 
   .user-name {
-    top: 20px;
+    top: 5px;
     left: 250px;
     text-wrap: nowrap;
   }
@@ -164,6 +162,7 @@ footer {
     left: -13rem;
     display: block;
     padding: 15px;
+    min-width: 380px;
   }
 
   .transparent {
@@ -178,12 +177,10 @@ footer {
   }
 
   /*main stuff*/
-
   .main-container {
     min-width: unset;
     max-width: unset;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin: 30px;
   }
 
   .works-container {
@@ -241,6 +238,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px 0;
+    min-width: unset;
   }
 
   .transparent {
@@ -254,6 +252,8 @@ footer {
   /*main stuff*/
 
   .main-container {
+    min-width: unset;
+    max-width: unset;
     margin: auto;
     max-width: 85%;
     display: flex;
