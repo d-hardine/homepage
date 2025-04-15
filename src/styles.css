@@ -133,6 +133,19 @@ footer {
   background-color: lightgreen;
 }
 
+.footer-container {
+  margin: auto;
+  max-width: 70%;
+  min-width: 950px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.footer-title {
+  margin-top: 0;
+}
+
 @media (max-width: 1000px) {
   /*header stuff*/
   #header-container {
@@ -190,6 +203,20 @@ footer {
 
   .work-image {
     width: 300px;
+  }
+
+  /*footer stuff*/
+  .footer-container {
+    min-width: unset;
+    max-width: unset;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .footer-image {
+    width: calc(0.6 * 480px);
+    height: calc(0.8 * 480px);
+    object-fit: cover;
   }
 }
 
