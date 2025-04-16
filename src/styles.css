@@ -146,6 +146,18 @@ footer {
   margin-top: 0;
 }
 
+.footer-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+#footer-icons {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
 @media (max-width: 1000px) {
   /*header stuff*/
   #header-container {
@@ -295,6 +307,17 @@ footer {
   }
 
   .works-container {
+    justify-content: center;
+  }
+
+  /*footer stuff*/
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #footer-icons {
     justify-content: center;
   }
 }
